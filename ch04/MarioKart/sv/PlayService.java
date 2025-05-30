@@ -1,5 +1,6 @@
 package ch04.MarioKart.sv;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 import ch04.MarioKart.dto.CartDTO;
@@ -32,10 +33,20 @@ public class PlayService {
 			System.out.println("뒤로 가서 정하셈");
 			break;
 		}
-
+		Calendar cal = Calendar.getInstance();
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH)+1;
+		int day = cal.get(Calendar.DAY_OF_MONTH);
+		int week = cal.get(Calendar.DAY_OF_WEEK);
+		
+		int hour = cal.get(Calendar.HOUR);
+		int minute = cal.get(Calendar.MINUTE);
+		int second = cal.get(Calendar.SECOND);
+		System.out.println("현재 시간은 "+hour+"시"+minute+"분"+second+"초 입니다");
 		System.out.println(loginState.characterDTO.name + "이(가) 주행을 시작합니다");
 
-		while (true) {
+		boolean run = true;
+		while (run) {
 			System.out.println("-----------------------");
 			System.out.println("1. 엔진가속  | 2. 브레이크 ");
 			System.out.println("-----------------------");
@@ -105,17 +116,18 @@ public class PlayService {
 					//System.out.println(item1);
 				}
 					break;
-					
 				
 				
 			case 4:
 				System.out.println("겜 끗");
-
+				System.out.println("현재 시간은 "+hour+"시"+minute+"분"+second+"초 입니다");
+				System.out.println(loginState.characterDTO.name + "이(가) 주행을 종료합니다");
+				
+				run = false;
 				break;
 			} // 스위치문 종료
 		} // while문 종료
-
-		// return null;
+		return loginState;
 	}
 
 	private int itemDTOs() {
