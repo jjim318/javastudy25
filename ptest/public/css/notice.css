@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* 폰트 적용 (선택사항) */
+@font-face {
+  font-family: 'OngeulipKonKon';
+  src: url('../fonts/OngeulipKonKon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 전체 초기화 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OngeulipKonKon', sans-serif;
+  background-color: #fff1f5;
+  color: #4e2b35;
+  margin: 0;
+  padding: 0;
+}
+
+/* 공지사항 전체 감싸는 wrapper */
+.notice-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 0 50px;
+}
+
+/* 각 공지 블록 */
+.container, .notice {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(208, 75, 118, 0.15);
+  padding: 25px 30px;
+}
+
+/* 공지 제목 */
+.notice-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d04b76;
+  border-bottom: 2px solid #d04b76;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* 날짜 */
+.notice-date {
+  font-size: 0.9rem;
+  color: #b44666;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* 공지 내용 */
+.notice-content {
+  font-size: 1.1rem;
+  line-height: 1.0;
+  white-space: pre-line;
+}

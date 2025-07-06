@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>애니메이션 소개</title>
+<link rel="stylesheet" href="../css/animation.css">
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<h1>오늘의 인기 애니메이션</h1>
+	</header>
+
+	<!-- ✨ 회원가입 버튼 -->
+	<div class="cta">
+		<a href="login.html" class="mypage-button"> 지금 회원가입하고 더 많은 애니 정보를
+			받으세요! </a>
+	</div>
+	<!-- ✨ 마이페이지 버튼 -->
+	<div>
+		<a href="mypage.html" class="mypage-button"> 내 정보 관리하고 더 즐기기! </a>
+	</div>
+
+	<!-- 📌 애니메이션 소개 카드들 -->
+	<section class="container">
+		<!-- 도원암귀 카드 -->
+		<div class="card" data-bs-toggle="modal"
+			data-bs-target="#portfolioModal1">
+			<img src="../img/dowon.jfif" alt="도원암귀 포스터" />
+			<div class="card-content">
+				<h2 class="card-title">도원암귀</h2>
+				<!-- <p class="card-desc">
+                    "너는 오니의 피를 이어받았다."<br> 일부 인간에게 내려오는 오니와 모모타로의 피.<br> 먼
+                    옛날, 스스로의 흉포성을 자각하고 눈에 띄지 않도록<br> 조용히 살고 있던 '오니'였지만, 그곳에
+                    '모모타로'가 쳐들어갔다.<br> 각각 '모모타로 기관', '오니 기관'을 설립하여 항쟁하기를 수천 년...<br>
+
+                    갑작스러운 모모타로의 습격으로 인해 자신이<br> 오니라는 사실을 알게 된 주인공, 이치노세 시키.<br>
+
+                    자신이 가진 '오니'의 피가 끓어오른다!!<br> 신세대 다크 히어로 귀담, 개막!
+                </p> -->
+			</div>
+		</div>
+
+		<!-- 귀멸의 칼날 카드 -->
+		<div class="card" data-bs-toggle="modal"
+			data-bs-target="#portfolioModal2">
+			<img src="../img/kimetsu.jfif" alt="귀멸의 칼날 포스터" />
+			<div class="card-content">
+				<h2 class="card-title">귀멸의 칼날:무한열차</h2>
+				<!-- <p class="card-desc">
+                    혈귀로 변해버린 여동생 네즈코를 인간으로 되돌릴 단서를 찾아 비밀조직 귀살대에 들어간 탄지로.<br> 젠이츠,
+                    이노스케와 새로운 임무 수행을 위해 무한열차에 탑승 후<br> 귀살대 최강 검사 염주 렌고쿠와 합류하게 된다.<br>
+                    달리는 무한열차에서 승객들이 하나 둘 흔적 없이 사라지자<br> 숨어있는 식인 혈귀의 존재를 직감하는 렌고쿠.
+                    <br> 귀살대 탄지로 일행과 최강 검사 염주 렌고쿠는 어둠 속을 달리는 무한열차에서<br> 모두의
+                    목숨을 구하기 위해 예측불가능한 능력을 가진 혈귀와 목숨을 건 혈전을 시작하는데…
+                </p> -->
+			</div>
+		</div>
+
+		<!-- 시간을 달리는 소녀 카드 -->
+		<div class="card" data-bs-toggle="modal"
+			data-bs-target="#portfolioModal3">
+			<img src="../img/timetravel.jfif" alt="시간을 달리는 소녀 포스터" />
+			<div class="card-content">
+				<h2 class="card-title">시간을 달리는 소녀</h2>
+				<!-- <p class="card-desc">
+                    17세, 다시는 돌아갈 수 없는 그해 여름.<br> 기다려, 지금 너에게 달려갈게!
+                </p> -->
+			</div>
+		</div>
+	</section>
+
+	<!-- 모달 1: 도원암귀 -->
+	<div class="modal fade" id="portfolioModal1" tabindex="-1"
+		aria-labelledby="portfolioModal1Label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="portfolioModal1Label">도원암귀</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					"너는 오니의 피를 이어받았다."<br> 일부 인간에게 내려오는 오니와 모모타로의 피.<br> 먼
+					옛날, 스스로의 흉포성을 자각하고 눈에 띄지 않도록<br> 조용히 살고 있던 '오니'였지만, 그곳에
+					'모모타로'가 쳐들어갔다.<br> 각각 '모모타로 기관', '오니 기관'을 설립하여 항쟁하기를 수천 년...
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 모달 2: 귀멸의 칼날 -->
+	<div class="modal fade" id="portfolioModal2" tabindex="-1"
+		aria-labelledby="portfolioModal2Label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="portfolioModal2Label">귀멸의 칼날:무한열차</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					혈귀로 변해버린 여동생 네즈코를 인간으로 되돌릴 단서를 찾아 비밀조직 귀살대에 들어간 탄지로.<br> 젠이츠,
+					이노스케와 새로운 임무 수행을 위해 무한열차에 탑승 후 귀살대 최강 검사 염주 렌고쿠와 합류하게 된다.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 모달 3: 시간을 달리는 소녀 -->
+	<div class="modal fade" id="portfolioModal3" tabindex="-1"
+		aria-labelledby="portfolioModal3Label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="portfolioModal3Label">시간을 달리는 소녀</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					17세, 다시는 돌아갈 수 없는 그해 여름.<br> 기다려, 지금 너에게 달려갈게!
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

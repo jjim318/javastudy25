@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'OngeulipKonKon';
+	src: url('../fonts/OngeulipKonKon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* join */
+/* 기본 스타일(배경색+박스 위치) */
+body {
+	font-family: 'OngeulipKonKon', sans-serif;
+	background-color: #fff1f5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	color: #4e2b35;
+}
+/* 박스 스타일(안에 문구+라벨+입력창이 들어감) */
+.signup-box {
+	background-color: #ffeff0;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 6px 20px rgba(247, 141, 167, 0.2);
+	width: 360px;
+	
+} 
+.login-link a {
+	color: #d04b76;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+.login-link a:hover {
+	text-decoration: underline;
+}
+
+/* 문구 스타일 */
+h2 {
+	font-size: 2rem;
+	color: #d04b76;
+	text-align: center; /* 가운데정렬 */
+	margin-bottom: 20px;
+}
+/* 라벨스타일 */
+label {
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+}
+/* 입력칸 스타일 */
+input {
+	width: 94%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #d04b76;
+	border-radius: 10px;
+}
+/* 가입하기 버튼스타일 */
+button {
+	width: 100%;
+	margin-top: 20px;
+	padding: 12px;
+	border: none;
+	border-radius: 30px;
+	background-color: #d04b76;
+	color: white;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #b44666;
+}

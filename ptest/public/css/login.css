@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* login */
+@font-face {
+	font-family: 'OngeulipKonKon';
+	src: url('../fonts/OngeulipKonKon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'OngeulipKonKon', sans-serif;
+	background-color: #fff1f5;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #4e2b35;
+}
+
+.login-container {
+	background-color: #ffeff0;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 6px 20px rgba(247, 141, 167, 0.2);
+	width: 360px;
+}
+
+h2 {
+	text-align: center;
+	color: #d04b76;
+	margin-bottom: 25px;
+	font-size: 2rem;
+}
+
+label {
+	display: block;
+	margin-top: 12px;
+	font-weight: bold;
+}
+
+input {
+	width: 94%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #d04b76;
+	border-radius: 10px;
+}
+
+button {
+	margin-top: 20px;
+	width: 100%;
+	padding: 12px;
+	background-color: #d04b76;
+	color: white;
+	border: none;
+	border-radius: 30px;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #b44666;
+}
+
+.signup-link {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 0.95rem;
+}
+
+.signup-link a {
+	color: #d04b76;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.signup-link a:hover {
+	text-decoration: underline;
+}
